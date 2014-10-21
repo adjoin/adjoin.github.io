@@ -18,7 +18,7 @@
 
 
     <!-- ================ Facebook Open Graph ====================  -->
-    <meta property="fb:app_id" content="400509283388389" />
+    <meta property="fb:app_id" content="601002866695441" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="adjoin.io" />
     <meta property="og:url" content="http://adjoin.io">
@@ -29,8 +29,41 @@
   </head>
 
   <body>
-    <div class="body-container">
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '601002866695441',
+          xfbml      : true,
+          version    : 'v2.1'
+        });
+      };
 
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="body-container">
+      <div class="social-like-container">
+        <div class="fb-like"
+        data-href="http://adjoin.io"
+        data-layout="button"
+        data-action="like"
+        data-share="true"></div>
+        <!-- <div
+          class="fb-like"
+          data-share="true"
+          data-width="225"
+          data-layout="button"
+          data-show-faces="true">
+        </div> -->
+      </div>
+      <div class="lang-btn-container">
+
+      </div>
 
       <section id="hero">
         <div id="large-header" class="large-header">
@@ -43,6 +76,7 @@
           <span class="main-actions">
             <a data-scroll href="#sign-up" class="btn btn-success btn-large">Sign Up</a>
             <a data-scroll href="#how-it-works" class="btn btn-default btn-large">Learn More</a>
+
           </span>
 
         </div>

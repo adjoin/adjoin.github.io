@@ -19,10 +19,10 @@
 
 
     <!-- ================ Facebook Open Graph ====================  -->
-    <meta property="fb:app_id" content="400509283388389" />
+    <meta property="fb:app_id" content="601002866695441" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="adjoin.io" />
-    <meta property="og:url" content="http://adjoin.io">
+    <meta property="og:url" content="http://adjoin.io/ar">
     <meta property="og:title" content="أد-جوين | تسويق المحتوى العربي ، إعلانات المحتوى " />
     <meta property="og:image" content="http://adjoin.io/images/adjoin_ar_tricolor.jpg" />
     <meta property="og:description" content="أد-جوين هو منصة إعلانية تستخدم الذكاء الصناعي لعرض مقالات متعلقة و مدفوعة الأجر على موقعك " />
@@ -30,6 +30,23 @@
   </head>
 
   <body>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '601002866695441',
+          xfbml      : true,
+          version    : 'v2.1'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_AR/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
     <div class="body-container">
 
 
